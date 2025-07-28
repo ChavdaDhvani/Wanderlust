@@ -1,0 +1,118 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content container grows to push footer down */
+.container {
+    flex: 1;
+    padding-top: 1rem;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fa-compass {
+    color: rgb(150, 8, 8);
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: black !important;
+    margin: 0 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.f-info {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.f-info-socials i:hover {
+    color: #000;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 0.75rem;
+    font-weight: 500;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-img-overlay {
+    background-color: white;
+    opacity: 0;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 0.3;
+}
+
+.add-btn{
+    background-color: rgb(150, 8, 8) !important;
+}
+
+
+.dlt-btn{
+    background-color: rgb(150, 8, 8) !important;
+    color: white !important;
+}
+
+.listing-img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}

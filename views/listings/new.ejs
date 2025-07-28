@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate.ejs') %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+   <br><br>
+<h3>Create a New Listing</h3>
+<br>
+
+<form method="post" action="/listings" class="needs-validation" novalidate enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="listing[title]" placeholder="Enter title" required >
+        <div class="invalid-feedback">Please enter Title</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="listing[description]" rows="3" placeholder="Enter description" required ></textarea>
+        <div class="invalid-feedback">Please enter a short Discription</div>
+    </div>
+
+       <div class="mb-3">
+        <label for="image" class="form-label">Upload Image</label>
+        <input class="form-control" type="file" id="image" name="listing[image]">
+        <div class="invalid-feedback">Please enter Image URL</div>
+      </div>
+
+    <div class="row">
+         <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input  class="form-control" id="price" name="listing[price]" placeholder="Enter price" required >
+        <div class="invalid-feedback">Please enter Price</div>   
+      </div>
+
+    <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" class="form-control" id="country" name="listing[country]" placeholder="Enter country" required >
+        <div class="invalid-feedback">Please enter Country name</div>
+      </div>
+    </div>
+
+   
+
+    <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" name="listing[location]" placeholder="Enter location"  required>
+        <div class="invalid-feedback">Please enter Location</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary add-btn">Save</button>
+</form>
+</div>
+</div>
+
