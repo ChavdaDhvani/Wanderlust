@@ -7,7 +7,7 @@ The site is **fully deployed** and live.
 ---
 
 ## 🚀 Live Demo
-🔗 [Visit Wanderlust Website]()  
+🔗 [Visit Wanderlust Website](https://wanderlust-rxie.onrender.com/listings)  
 
 ---
 
