@@ -65,9 +65,9 @@ The site is **fully deployed** and live.
 ```
 5. Run the app:
 ```bash
-npm start
+   npm start
 ```
 6. Visit:
 ```bash
-http://localhost:8000/listings
+   http://localhost:8000/listings
 ```
