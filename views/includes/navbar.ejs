@@ -1,14 +1,17 @@
 <style>
-  .btn-search i {
+  .btn-search i{
+    display: inline;
     padding-right: 0.5rem;
+   
   }
-  .btn-search {
+  .btn-search{
+     border-radius: 25px;
+  }
+  .search-input{
     border-radius: 25px;
   }
-  .search-input {
-    border-radius: 25px;
-  }
-@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
   .navbar-collapse {
     background-color: white;
     padding: 1rem;
@@ -19,36 +22,38 @@
   color: black !important;
 }
 
+  
+
 </style>
 
-<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top py-3">
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top py-4">
+
   <div class="container-fluid">
-    <a class="navbar-brand fs-6 py-0" href="/listings">
-      <i class="fa-solid fa-compass"></i>
-    </a>
+
+    <a class="navbar-brand fs-6 py-0" href="/listings"><i class="fa-solid fa-compass"></i></a>
 
     <button class="navbar-toggler py-0 px-1" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
       aria-label="Toggle navigation">
+
       <span class="navbar-toggler-icon"></span>
+
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link " href="/listings">Explore</a>
       </div>
 
-      <!-- Search bar: moves below links in mobile -->
-      <form class="d-flex flex-column flex-md-row ms-md-auto my-2 my-md-0" role="search">
-        <input class="form-control me-md-2 search-input" type="search" placeholder="Search destinations">
-        <button class="btn btn-search dlt-btn mt-2 mt-md-0" type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i> Search
-        </button>
-      </form>
-
-      <div class="navbar-nav ms-md-3">
-        <a class="nav-link" href="/listings/new">Airbnb your home</a>
-        <% if (!currUser) { %>
+      <div class="navbar-nav ms-auto">
+        <input class="form-control me-2 search-input" type="search" placeholder="Search destinations"/>
+      <button class="btn btn-search dlt-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </div>
+      
+      <div class="navbar-nav ms-auto">
+         <a class="nav-link " href="/listings/new">Airbnb your home</a>
+       <% if (!currUser) { %>
+        
           <a class="nav-link" href="/signup"><b>Sign up</b></a>
           <a class="nav-link" href="/login"><b>Log in</b></a>
         <% } else { %>
